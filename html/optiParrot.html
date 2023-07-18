@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./../css/materialize.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/style.css" />
+    <title>Tutoriel TT2</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper blue darken-1">
+            <a class="title">Bienvenue</a>
+            <ul id="nav-mobile" class="right hide-on-small-and-down">
+              <li><a href="./../index.html">Accueil</a></li>
+              <li><a href="aPropos.html">A propos</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container tutoriel-container">
+        <div class="row">
+          <div class="col s9">
+            <div class="section center">
+              <h1>Optimisateur Parrot Tutoriel</h1>
+            </div>
+            <div class="divider"></div>
+            <div class="section center scrollspy" id="introduction">
+              <h5>Introduction</h5>
+              <p>Bienvenu sur le tutoriel pour l'optimisateur de Parrot.</p>
+              <p>Cet Opti est utile pour l'arbre de compétence et également pour les artéfacts !</p>
+            </div>
+            <div class="divider"></div>
+          </div>
+          <div class="col s3 hide-on-small-only">
+            <div class="pinned">
+              <ul class="section table-of-contents">
+                <li><a href="#introduction" class="">Introduction</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer blue darken-1">
+      <div class="footer-copyright blue darken-1">
+        <div class="container center">© Copyright Pinpin</div>
+      </div>
+    </footer>
+    <script src="./../js/materialize.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".scrollspy");
+        var instances = M.ScrollSpy.init(elems, {
+          getActiveElement: function (id) {
+            return 'a[href="#' + id + '"]';
+          },
+        });
+        var elements = document.querySelectorAll(".materialboxed");
+        var instances = M.Materialbox.init(elements, {});
+      });
+    </script>
+  </body>
+</html>
