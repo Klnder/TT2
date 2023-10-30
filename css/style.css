@@ -65,3 +65,10 @@ img {
   display: inline-flex;
   vertical-align: top;
 }
+h4 {
+  text-align: center;
+}
+h6 {
+  font-weight: bold;
+  text-align: center;
+}
