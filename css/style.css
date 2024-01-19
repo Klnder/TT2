@@ -23,6 +23,7 @@ main {
 
 .cards {
   width: 25%;
+  min-width: 270px;
   margin: 5px 5px;
 }
 .title {
